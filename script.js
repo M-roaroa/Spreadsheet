@@ -30,15 +30,15 @@ exportBtn.onclick = function(e) {
             .join(",") + "\r\n" // 모든 배열 안의 item들을 ,를 이용해서 join 하고 한 칸 띄기
     }
 
-    // 엑셀 파일 다운로드
-    // const csvObj = new Blob([csv])
-    // const csvUrl = URL.createObjectURL(csvObj)
-    // console.log('csvUrl', csvUrl);
+    //엑셀 파일 다운로드
+    const csvObj = new Blob([csv])
+    const csvUrl = URL.createObjectURL(csvObj)
+    console.log('csvUrl', csvUrl);
 
-    // const a = document.createElement('a');
-    // a.href = csvUrl;
-    // a.download = "Spreadsheet File Name.csv";
-    // a.click();
+    const a = document.createElement('a');
+    a.href = csvUrl;
+    a.download = "Spreadsheet File Name.csv";
+    a.click();
 }
 
 initSpreadsheet(); // 밑에 작성한 initSpreadsheet 함수 호출 // 위로 올라가면 호출 안됌
