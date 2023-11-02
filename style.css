@@ -1,0 +1,31 @@
+#exportBtn {
+    background-color:forestgreen;
+    padding: 13px;
+    margin-bottom: 10px;
+    border: 1px solid rgb(25, 105, 25);
+    color: white;
+    font-size: 16px;
+}
+
+.cell-row {
+    display: flex;
+}
+
+.cell { 
+    width: 90px;
+    height: 40px;
+    border: 1px solid lightgray;
+    outline: none;
+    box-sizing: border-box;
+}
+
+.cell.header {
+    background-color: rgb(238, 239, 197);;
+    color: darkgreen;
+    text-align: center;
+}
+
+.cell.header.active {
+    background-color: rgb(158, 227, 255);
+    color: white;
+}
